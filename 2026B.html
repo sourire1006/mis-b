@@ -9,18 +9,31 @@
 		h1 {color:blue; font-size:60px;}
 		h2 {color:#33ff33; font-size:40px;}
 	</style>
+
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "Tzyy-Ching Yang";
+		}
+	</script>
+
 </head>
 
 <body>
    <table width="80%">
 		<tr>
 			<td>
-				<img src="410920751.webp" width="90%"></img>
+				<img src="410920751.webp" width="90%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 			</td>
            
 			<td>
 				<h1>徐梓恩</h1>
-				<h2>XU-ZI EN</h2>
+				<h2 id="h2text">XU-ZI EN</h2>
 			</td>
 		</tr>
    </table>
